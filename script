@@ -1,0 +1,31 @@
+// ==UserScript==
+// @name         Custom Scratch Tags
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Allows for custom project tags on Scratch.
+// @author       TastylittleMuffin
+// @match        https://scratch.mit.edu/projects/*
+// @grant        none
+// @downloadURL  http://24.210.61.240:84//raw/custom-project-tags.js
+// @updateURL    http://24.210.61.240:84//raw/custom-project-tags.js
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    var URL = window.location.href;
+if (URL.includes("scratch.mit.edu/projects/") === true) {
+  var ID = URL.substring(33, URL.length - 1);
+  $('#project-tags').click(function() {
+    if ($('#project-tags').is(':hover')) {
+      var tag = encodeURIComponent(prompt("Tag content?"));
+      $.ajax({
+        type: "PUT",
+        url: "https://scratch.mit.edu/site-api/tags/project/" + ID + "/add/?names=" + tag
+      });
+    location.reload();
+    }
+  });
+
+}
+})();
