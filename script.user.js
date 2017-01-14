@@ -6,8 +6,8 @@
 // @author       TastylittleMuffin
 // @match        https://scratch.mit.edu/projects/*
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/user.js
-// @updateURL    https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/user.js
+// @downloadURL  https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/script.user.js
+// @updateURL    https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/script.user.js
 // ==/UserScript==
 
 (function() {
