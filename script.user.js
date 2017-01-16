@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name         Custom Scratch Tags
 // @namespace    http://tampermonkey.net/
