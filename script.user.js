@@ -31,12 +31,10 @@
     $('#project-tags').click(function() {
       if ($('#project-tags').is(':hover')) {
         var tag = encodeURIComponent(prompt("Tag content?"));
-        if (tag != null) {
           $.ajax({
             type: "PUT",
             url: "https://scratch.mit.edu/site-api/tags/project/" + ID + "/add/?names=" + tag
           });
-        }
         location.reload();
       }
     });
