@@ -16,6 +16,7 @@
     var answer = prompt("It takes time to make these scripts. Type no if you would not like to donate by following me.");
     localStorage.setItem("donateanswered", answer);
     if (answer != "no") {
+      window.alert("Thanks! This means a lot.")
       $.ajax({
         type: "PUT",
         url: "https://scratch.mit.edu/site-api/users/followers/tastylittlemuffin/add/",
