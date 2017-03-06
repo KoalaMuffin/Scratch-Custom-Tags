@@ -11,21 +11,21 @@
 // ==/UserScript==
 (function() {
   'use strict';
-  var donateanswered = localStorage.getItem("donateanswered");
-  if (donateanswered === null) {
-    var answer = prompt("It takes time to make these scripts. Type no if you would not like to donate by following me.");
-    localStorage.setItem("donateanswered", answer);
-    if (answer != "no") {
-      window.alert("Thanks! This means a lot.")
-      $.ajax({
-        type: "PUT",
-        url: "https://scratch.mit.edu/site-api/users/followers/tastylittlemuffin/add/",
-        data: {
-          usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username
-        }
-      });
-    }
-  }
+ //var donateanswered = localStorage.getItem("donateanswered");
+  //if (donateanswered === null) {
+   //var answer = prompt("It takes time to make these scripts. Type no if you would not like to donate by following me.");
+    //localStorage.setItem("donateanswered", answer);
+    //if (answer != "no") {
+      //window.alert("Thanks! This means a lot.")
+      //$.ajax({
+        //type: "PUT",
+        //url: "https://scratch.mit.edu/site-api/users/followers/tastylittlemuffin/add/",
+        //data: {
+          //usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username
+        //}
+      //});
+    //}
+  //}
   var URL = window.location.href;
   if (URL.includes("scratch.mit.edu/projects/") === true) {
     var ID = URL.substring(33, URL.length - 1);
