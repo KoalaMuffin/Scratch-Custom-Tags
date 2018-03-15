@@ -3,11 +3,11 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Allows for custom project tags on Scratch.
-// @author       TastylittleMuffin
+// @author       [[REDACTED]]
 // @match        https://scratch.mit.edu/projects/*
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/script.user.js
-// @updateURL    https://raw.githubusercontent.com/jamescu5/Scratch-Custom-Tags/master/script.user.js
+// @downloadURL  https://raw.githubusercontent.com/KoalaMuffin/Scratch-Custom-Tags/master/script.user.js
+// @updateURL    https://raw.githubusercontent.com/KoalaMuffin/Scratch-Custom-Tags/master/script.user.js
 // ==/UserScript==
 (function() {
   'use strict';
@@ -19,7 +19,7 @@
       //window.alert("Thanks! This means a lot.")
       //$.ajax({
         //type: "PUT",
-        //url: "https://scratch.mit.edu/site-api/users/followers/tastylittlemuffin/add/",
+        //url: "https://scratch.mit.edu/site-api/users/followers/[[REDACTED]]/add/",
         //data: {
           //usernames: Scratch.INIT_DATA.LOGGED_IN_USER.model.username
         //}
